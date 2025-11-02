@@ -1,0 +1,218 @@
+2.11.2025, 18:46:22 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 18:47:28 - ERROR - Error: Cannot find bug with id: 
+2.11.2025, 18:47:28 - ERROR - Couldn't get bug | 
+2.11.2025, 18:48:05 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 18:48:19 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 18:48:45 - ERROR - Error: Cannot find bug with id: b106
+2.11.2025, 18:48:45 - ERROR - Couldn't get bug | 
+2.11.2025, 18:54:44 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 18:55:18 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 18:56:53 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 18:57:52 - ERROR - Error: Cannot find bug with id: b103
+2.11.2025, 18:57:52 - ERROR - Couldn't remove bug | 
+2.11.2025, 18:58:35 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 18:58:39 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 18:59:34 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:00:26 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:01:31 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:02:57 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:03:15 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:03:19 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:04:28 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:05:25 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:08:19 - INFO - Bugs read successfuly
+2.11.2025, 19:10:57 - INFO - Bugs read successfuly
+2.11.2025, 19:12:25 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:22:00 - INFO - Bugs read successfuly
+2.11.2025, 19:22:15 - INFO - Bugs read successfuly
+2.11.2025, 19:22:31 - INFO - Bugs read successfuly
+2.11.2025, 19:24:31 - INFO - Bugs read successfuly
+2.11.2025, 19:26:29 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:28:28 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:29:00 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:29:12 - INFO - Bugs read successfuly
+2.11.2025, 19:31:02 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 19:31:13 - INFO - Bugs read successfuly
+2.11.2025, 19:34:02 - INFO - Bugs read successfuly
+2.11.2025, 19:34:07 - INFO - Bugs read successfuly
+2.11.2025, 19:34:09 - INFO - Bug with id: HUxFDH read successfuly
+2.11.2025, 19:34:32 - INFO - Bug with id: HUxFDH read successfuly
+2.11.2025, 19:34:37 - INFO - Bug with id: HUxFDH read successfuly
+2.11.2025, 19:34:50 - INFO - Bug with id: HUxFDH read successfuly
+2.11.2025, 19:35:33 - INFO - Bug with id: HUxFDH read successfuly
+2.11.2025, 19:36:00 - INFO - Bug with id: HUxFDH read successfuly
+2.11.2025, 19:36:05 - INFO - Bugs read successfuly
+2.11.2025, 19:36:09 - INFO - Bug with id: 4IS2R6 removed successfuly
+2.11.2025, 19:36:09 - INFO - Bugs read successfuly
+2.11.2025, 19:41:55 - INFO - Bugs read successfuly
+2.11.2025, 19:42:26 - ERROR - Couldn't get bug | Error: Cannot find bug with id: save[object Object]
+2.11.2025, 19:44:03 - INFO - Bugs read successfuly
+2.11.2025, 19:44:17 - INFO - Bug with id: 8Poblv added successfuly
+2.11.2025, 19:45:10 - INFO - Bug with id: RfILYw added successfuly
+2.11.2025, 19:55:20 - INFO - Bugs read successfuly
+2.11.2025, 19:55:22 - INFO - Bugs read successfuly
+2.11.2025, 19:56:32 - INFO - Bugs read successfuly
+2.11.2025, 19:56:33 - INFO - Bugs read successfuly
+2.11.2025, 19:56:59 - INFO - Bugs read successfuly
+2.11.2025, 19:57:32 - INFO - Bugs read successfuly
+2.11.2025, 19:57:50 - INFO - Bugs read successfuly
+2.11.2025, 19:57:50 - INFO - Bugs read successfuly
+2.11.2025, 19:57:51 - INFO - Bugs read successfuly
+2.11.2025, 19:57:54 - INFO - Bugs read successfuly
+2.11.2025, 19:57:55 - INFO - Bugs read successfuly
+2.11.2025, 19:57:57 - INFO - Bugs read successfuly
+2.11.2025, 19:57:59 - INFO - Bugs read successfuly
+2.11.2025, 19:58:01 - INFO - Bugs read successfuly
+2.11.2025, 19:58:02 - INFO - Bugs read successfuly
+2.11.2025, 19:58:06 - INFO - Bugs read successfuly
+2.11.2025, 19:58:06 - INFO - Bugs read successfuly
+2.11.2025, 19:58:09 - INFO - Bugs read successfuly
+2.11.2025, 19:58:34 - INFO - Bugs read successfuly
+2.11.2025, 19:58:36 - INFO - Bugs read successfuly
+2.11.2025, 19:58:38 - INFO - Bugs read successfuly
+2.11.2025, 19:58:39 - INFO - Bugs read successfuly
+2.11.2025, 19:58:39 - INFO - Bugs read successfuly
+2.11.2025, 19:58:45 - INFO - Bugs read successfuly
+2.11.2025, 19:58:50 - INFO - Bugs read successfuly
+2.11.2025, 19:59:09 - INFO - Bugs read successfuly
+2.11.2025, 19:59:10 - INFO - Bugs read successfuly
+2.11.2025, 19:59:11 - INFO - Bugs read successfuly
+2.11.2025, 19:59:11 - INFO - Bugs read successfuly
+2.11.2025, 19:59:13 - INFO - Bugs read successfuly
+2.11.2025, 19:59:14 - INFO - Bugs read successfuly
+2.11.2025, 19:59:15 - INFO - Bugs read successfuly
+2.11.2025, 19:59:15 - INFO - Bugs read successfuly
+2.11.2025, 19:59:17 - INFO - Bugs read successfuly
+2.11.2025, 19:59:18 - INFO - Bugs read successfuly
+2.11.2025, 19:59:18 - INFO - Bugs read successfuly
+2.11.2025, 19:59:19 - INFO - Bugs read successfuly
+2.11.2025, 19:59:53 - INFO - Bugs read successfuly
+2.11.2025, 19:59:54 - INFO - Bugs read successfuly
+2.11.2025, 19:59:54 - INFO - Bugs read successfuly
+2.11.2025, 19:59:59 - INFO - Bugs read successfuly
+2.11.2025, 20:01:23 - INFO - Bugs read successfuly
+2.11.2025, 20:02:23 - INFO - Bugs read successfuly
+2.11.2025, 20:02:50 - INFO - Bugs read successfuly
+2.11.2025, 20:02:50 - INFO - Bugs read successfuly
+2.11.2025, 20:02:53 - INFO - Bugs read successfuly
+2.11.2025, 20:02:59 - INFO - Bugs read successfuly
+2.11.2025, 20:03:01 - INFO - Bugs read successfuly
+2.11.2025, 20:03:01 - INFO - Bugs read successfuly
+2.11.2025, 20:03:02 - INFO - Bugs read successfuly
+2.11.2025, 20:03:03 - INFO - Bugs read successfuly
+2.11.2025, 20:03:06 - INFO - Bugs read successfuly
+2.11.2025, 20:03:08 - INFO - Bugs read successfuly
+2.11.2025, 20:03:09 - INFO - Bugs read successfuly
+2.11.2025, 20:03:10 - INFO - Bugs read successfuly
+2.11.2025, 20:03:25 - INFO - Bugs read successfuly
+2.11.2025, 20:03:31 - INFO - Bugs read successfuly
+2.11.2025, 20:03:33 - INFO - Bugs read successfuly
+2.11.2025, 20:03:36 - INFO - Bugs read successfuly
+2.11.2025, 20:03:36 - INFO - Bugs read successfuly
+2.11.2025, 20:05:25 - INFO - Bugs read successfuly
+2.11.2025, 20:05:35 - INFO - Bugs read successfuly
+2.11.2025, 20:05:36 - INFO - Bugs read successfuly
+2.11.2025, 20:05:36 - INFO - Bugs read successfuly
+2.11.2025, 20:05:37 - INFO - Bugs read successfuly
+2.11.2025, 20:05:41 - INFO - Bugs read successfuly
+2.11.2025, 20:05:43 - INFO - Bugs read successfuly
+2.11.2025, 20:05:47 - INFO - Bugs read successfuly
+2.11.2025, 20:05:47 - INFO - Bugs read successfuly
+2.11.2025, 20:05:49 - INFO - Bugs read successfuly
+2.11.2025, 20:05:49 - INFO - Bugs read successfuly
+2.11.2025, 20:05:51 - INFO - Bugs read successfuly
+2.11.2025, 20:06:10 - INFO - Bugs read successfuly
+2.11.2025, 20:06:13 - INFO - Bugs read successfuly
+2.11.2025, 20:06:14 - INFO - Bugs read successfuly
+2.11.2025, 20:06:14 - INFO - Bugs read successfuly
+2.11.2025, 20:06:14 - INFO - Bugs read successfuly
+2.11.2025, 20:06:14 - INFO - Bugs read successfuly
+2.11.2025, 20:06:15 - INFO - Bugs read successfuly
+2.11.2025, 20:06:25 - INFO - Bugs read successfuly
+2.11.2025, 20:06:27 - INFO - Bugs read successfuly
+2.11.2025, 20:06:33 - INFO - Bugs read successfuly
+2.11.2025, 20:06:50 - INFO - Bugs read successfuly
+2.11.2025, 20:06:51 - INFO - Bugs read successfuly
+2.11.2025, 20:06:51 - INFO - Bugs read successfuly
+2.11.2025, 20:06:54 - INFO - Bugs read successfuly
+2.11.2025, 20:06:55 - INFO - Bugs read successfuly
+2.11.2025, 20:07:15 - INFO - Bugs read successfuly
+2.11.2025, 20:07:41 - INFO - Bugs read successfuly
+2.11.2025, 20:07:43 - INFO - Bugs read successfuly
+2.11.2025, 20:07:45 - INFO - Bugs read successfuly
+2.11.2025, 20:07:45 - INFO - Bugs read successfuly
+2.11.2025, 20:07:47 - INFO - Bugs read successfuly
+2.11.2025, 20:07:47 - INFO - Bugs read successfuly
+2.11.2025, 20:07:49 - INFO - Bugs read successfuly
+2.11.2025, 21:03:32 - INFO - Bugs read successfuly
+2.11.2025, 21:03:36 - INFO - Bugs read successfuly
+2.11.2025, 21:12:42 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:23:11 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:28:21 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:28:41 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:31:40 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:32:20 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:32:28 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:32:46 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:33:17 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:33:21 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:33:23 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:35:36 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:39:12 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:39:24 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:41:04 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:41:15 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:41:35 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:41:38 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:41:50 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:42:36 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:42:50 - INFO - Bugs read successfuly
+2.11.2025, 21:44:37 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:45:58 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:46:16 - INFO - Bugs read successfuly
+2.11.2025, 21:46:48 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:47:14 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:47:33 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:48:10 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:48:15 - INFO - Bugs read successfuly
+2.11.2025, 21:48:27 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:50:21 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:50:23 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:50:25 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:50:27 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:50:37 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:50:43 - INFO - Bugs read successfuly
+2.11.2025, 21:50:51 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:51:01 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:51:26 - INFO - Bugs read successfuly
+2.11.2025, 21:51:31 - INFO - Bugs read successfuly
+2.11.2025, 21:53:43 - INFO - Bugs read successfuly
+2.11.2025, 21:53:43 - INFO - Bugs read successfuly
+2.11.2025, 21:55:21 - INFO - Bugs read successfuly
+2.11.2025, 21:55:32 - INFO - Bugs read successfuly
+2.11.2025, 21:55:53 - INFO - Bugs read successfuly
+2.11.2025, 21:55:57 - INFO - Bugs read successfuly
+2.11.2025, 21:55:59 - INFO - Bugs read successfuly
+2.11.2025, 21:56:00 - INFO - Bugs read successfuly
+2.11.2025, 21:56:01 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:56:05 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:56:38 - INFO - Bugs read successfuly
+2.11.2025, 21:56:40 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:57:06 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 21:57:11 - ERROR - Couldn't download pdf file | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 21:58:42 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 22:00:08 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 22:00:18 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 22:00:34 - INFO - Bugs read successfuly
+2.11.2025, 22:00:35 - INFO - Bugs read successfuly
+2.11.2025, 22:02:07 - INFO - Server listening on port http://127.0.0.1:3030/
+2.11.2025, 22:02:26 - INFO - Bugs read successfuly
+2.11.2025, 22:02:32 - ERROR - Couldn't download pdf | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 22:03:06 - ERROR - Couldn't download pdf | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 22:03:06 - ERROR - Couldn't download pdf | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 22:04:25 - INFO - Bugs read successfuly
+2.11.2025, 22:05:09 - INFO - Bugs read successfuly
+2.11.2025, 22:05:12 - ERROR - Couldn't download pdf | Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2.11.2025, 22:06:25 - INFO - Bugs read successfuly
+2.11.2025, 22:06:40 - INFO - Bugs read successfuly
+2.11.2025, 22:07:13 - INFO - Bugs read successfuly

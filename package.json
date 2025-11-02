@@ -1,0 +1,26 @@
+{
+  "name": "miss-bug-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ignore \"./data\" server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DekelAH/miss-bug-backend.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DekelAH/miss-bug-backend/issues"
+  },
+  "homepage": "https://github.com/DekelAH/miss-bug-backend#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pdfkit": "^0.17.2"
+  }
+}
