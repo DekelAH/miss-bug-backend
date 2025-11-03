@@ -45,6 +45,7 @@ app.get('/api/bug/save', async (req, res) => {
         _id: req.query._id,
         title: req.query.title,
         severity: +req.query.severity,
+        description: req.query.description,
         createdAt: req.query.createdAt
     }
 

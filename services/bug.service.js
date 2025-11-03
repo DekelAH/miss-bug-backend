@@ -33,10 +33,9 @@ async function getById(bugId) {
     }
 }
 
-
-
 async function save(bugToSave) {
 
+    console.log(bugToSave)
     try {
         if (bugToSave._id) {
 
