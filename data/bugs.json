@@ -1,51 +1,98 @@
 [
     {
-        "_id": "HUxFDH",
-        "title": "spider",
-        "severity": 7,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
-        "createdAt": 1762134436496
-    },
-    {
-        "_id": "kJUeJJ",
-        "title": "hornet",
+        "_id": "A1B2C3",
+        "title": "mosquito",
         "severity": 8,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
-        "createdAt": 1762134444432
+        "description": "Users are unable to click the login button on mobile devices. The button appears to be clickable but does not trigger any action.",
+        "createdAt": 1731398400000,
+        "labels": ["critical", "need-CR"]
     },
     {
-        "_id": "8Poblv",
-        "title": "Beatle",
-        "severity": 1,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
-        "createdAt": 1762134453741
-    },
-    {
-        "_id": "rjvoOx",
-        "title": "scorpion",
+        "_id": "D4E5F6",
+        "title": "cockroach",
         "severity": 9,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
-        "createdAt": 1762134427045
+        "description": "Dashboard page consumes increasing amounts of memory over time, eventually causing browser crashes after 30 minutes of use.",
+        "createdAt": 1731312000000,
+        "labels": ["critical", "dev-branch"]
     },
     {
-        "_id": "SmW1fJ",
-        "title": "Mantis",
+        "_id": "G7H8I9",
+        "title": "butterfly",
         "severity": 2,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
-        "createdAt": 1762134461709
+        "description": "The welcome email sent to new users contains a typo in the greeting message. Says 'Welcone' instead of 'Welcome'.",
+        "createdAt": 1731225600000,
+        "labels": ["harmless"]
     },
     {
-        "_id": "36qR0l",
-        "title": "ant",
-        "severity": 1,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
-        "createdAt": 1762134469181
-    },
-    {
-        "_id": "8iIQJh",
-        "title": "bee",
+        "_id": "J0K1L2",
+        "title": "beetle",
         "severity": 6,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
-        "createdAt": 1762134487071
+        "description": "When users sort search results by date, the sorting order appears random instead of chronological.",
+        "createdAt": 1731139200000,
+        "labels": ["need-CR", "dev-branch"]
+    },
+    {
+        "_id": "M3N4O5",
+        "title": "wasp",
+        "severity": 7,
+        "description": "Users cannot upload profile images larger than 2MB. Error message is unclear and misleading.",
+        "createdAt": 1731052800000,
+        "labels": ["critical", "need-CR"]
+    },
+    {
+        "_id": "P6Q7R8",
+        "title": "ladybug",
+        "severity": 3,
+        "description": "Footer text is hard to read in dark mode due to insufficient contrast between text and background.",
+        "createdAt": 1730966400000,
+        "labels": ["harmless", "dev-branch"]
+    },
+    {
+        "_id": "S9T0U1",
+        "title": "scorpion",
+        "severity": 10,
+        "description": "Production API is hitting rate limits during peak hours, causing service disruption for thousands of users.",
+        "createdAt": 1730880000000,
+        "labels": ["critical"]
+    },
+    {
+        "_id": "V2W3X4",
+        "title": "grasshopper",
+        "severity": 4,
+        "description": "Default notification sound volume is set too high and startles users. No way to adjust volume in settings.",
+        "createdAt": 1730793600000,
+        "labels": ["basic-injury", "dev-branch"]
+    },
+    {
+        "_id": "Y5Z6A7",
+        "title": "dragonfly",
+        "severity": 5,
+        "description": "When exporting data to CSV, the last three columns are not included in the exported file.",
+        "createdAt": 1730707200000,
+        "labels": ["need-CR"]
+    },
+    {
+        "_id": "B8C9D0",
+        "title": "ant",
+        "severity": 6,
+        "description": "Password reset links expire after 5 minutes, which is too short for users who check email on different devices.",
+        "createdAt": 1730620800000,
+        "labels": ["need-CR", "dev-branch"]
+    },
+    {
+        "_id": "E1F2G3",
+        "title": "firefly",
+        "severity": 3,
+        "description": "Several UI elements are displaying English text instead of French on the French language version of the site.",
+        "createdAt": 1730534400000,
+        "labels": ["harmless"]
+    },
+    {
+        "_id": "H4I5J6",
+        "title": "centipede",
+        "severity": 9,
+        "description": "Database queries are timing out during backup operations, affecting user experience during scheduled maintenance windows.",
+        "createdAt": 1730448000000,
+        "labels": ["critical", "need-CR", "dev-branch"]
     }
 ]
