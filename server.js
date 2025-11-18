@@ -9,8 +9,12 @@ import { authRoutes } from './api/auth/auth.routes.js'
 
 const app = express()
 
-const port = 3030
-app.listen(port, () => loggerService.info(`Server listening on port http://127.0.0.1:${port}/`))
+const port = process.env.PORT || 3030
+app.listen(port, () => {
+
+    loggerService.info(`Server listening on port http://127.0.0.1:${port}/`)
+    console.log(`App listening on port ${port}!`) 
+})
 
 //* --------------- Config ---------------
 
