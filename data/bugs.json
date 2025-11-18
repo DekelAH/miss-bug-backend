@@ -1,98 +1,88 @@
 [
     {
-        "_id": "A1B2C3",
-        "title": "mosquito",
-        "severity": 8,
-        "description": "Users are unable to click the login button on mobile devices. The button appears to be clickable but does not trigger any action.",
-        "createdAt": 1731398400000,
-        "labels": ["critical", "need-CR"]
-    },
-    {
-        "_id": "D4E5F6",
-        "title": "cockroach",
-        "severity": 9,
-        "description": "Dashboard page consumes increasing amounts of memory over time, eventually causing browser crashes after 30 minutes of use.",
-        "createdAt": 1731312000000,
-        "labels": ["critical", "dev-branch"]
-    },
-    {
-        "_id": "G7H8I9",
-        "title": "butterfly",
-        "severity": 2,
-        "description": "The welcome email sent to new users contains a typo in the greeting message. Says 'Welcone' instead of 'Welcome'.",
-        "createdAt": 1731225600000,
-        "labels": ["harmless"]
-    },
-    {
-        "_id": "J0K1L2",
-        "title": "beetle",
-        "severity": 6,
-        "description": "When users sort search results by date, the sorting order appears random instead of chronological.",
-        "createdAt": 1731139200000,
-        "labels": ["need-CR", "dev-branch"]
-    },
-    {
-        "_id": "M3N4O5",
-        "title": "wasp",
-        "severity": 7,
-        "description": "Users cannot upload profile images larger than 2MB. Error message is unclear and misleading.",
-        "createdAt": 1731052800000,
-        "labels": ["critical", "need-CR"]
-    },
-    {
-        "_id": "P6Q7R8",
-        "title": "ladybug",
-        "severity": 3,
-        "description": "Footer text is hard to read in dark mode due to insufficient contrast between text and background.",
-        "createdAt": 1730966400000,
-        "labels": ["harmless", "dev-branch"]
-    },
-    {
-        "_id": "S9T0U1",
-        "title": "scorpion",
-        "severity": 10,
-        "description": "Production API is hitting rate limits during peak hours, causing service disruption for thousands of users.",
-        "createdAt": 1730880000000,
-        "labels": ["critical"]
-    },
-    {
-        "_id": "V2W3X4",
-        "title": "grasshopper",
-        "severity": 4,
-        "description": "Default notification sound volume is set too high and startles users. No way to adjust volume in settings.",
-        "createdAt": 1730793600000,
-        "labels": ["basic-injury", "dev-branch"]
-    },
-    {
-        "_id": "Y5Z6A7",
+        "_id": "06VzjQ",
         "title": "dragonfly",
-        "severity": 5,
-        "description": "When exporting data to CSV, the last three columns are not included in the exported file.",
-        "createdAt": 1730707200000,
-        "labels": ["need-CR"]
-    },
-    {
-        "_id": "B8C9D0",
-        "title": "ant",
-        "severity": 6,
-        "description": "Password reset links expire after 5 minutes, which is too short for users who check email on different devices.",
-        "createdAt": 1730620800000,
-        "labels": ["need-CR", "dev-branch"]
-    },
-    {
-        "_id": "E1F2G3",
-        "title": "firefly",
         "severity": 3,
-        "description": "Several UI elements are displaying English text instead of French on the French language version of the site.",
-        "createdAt": 1730534400000,
-        "labels": ["harmless"]
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
+        "createdAt": 1763446413829,
+        "labels": [
+            "harmless"
+        ],
+        "updatedAt": 1763450845521,
+        "creator": {
+            "_id": "n2ln1D",
+            "fullname": "kuki za",
+            "score": 100,
+            "isAdmin": false
+        }
     },
     {
-        "_id": "H4I5J6",
-        "title": "centipede",
-        "severity": 9,
-        "description": "Database queries are timing out during backup operations, affecting user experience during scheduled maintenance windows.",
-        "createdAt": 1730448000000,
-        "labels": ["critical", "need-CR", "dev-branch"]
+        "_id": "GUl3Nf",
+        "title": "beatle",
+        "severity": 2,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
+        "createdAt": 1763446422952,
+        "labels": [
+            "harmless"
+        ],
+        "updatedAt": 1763446934913,
+        "creator": {
+            "_id": "n744Kz",
+            "fullname": "admini mi",
+            "score": 100,
+            "isAdmin": true
+        }
+    },
+    {
+        "_id": "ZfQBwP",
+        "title": "spider",
+        "severity": 6,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
+        "createdAt": 1763446548530,
+        "labels": [
+            "harmless",
+            "basic-injury"
+        ],
+        "creator": {
+            "_id": "UiWTow",
+            "fullname": "chuki re",
+            "score": 100,
+            "isAdmin": false
+        }
+    },
+    {
+        "_id": "ht6lfr",
+        "title": "bee",
+        "severity": 4,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
+        "createdAt": 1763446567078,
+        "labels": [
+            "harmless",
+            "basic-injury"
+        ],
+        "updatedAt": 1763446595024,
+        "creator": {
+            "_id": "UiWTow",
+            "fullname": "chuki re",
+            "score": 100,
+            "isAdmin": false
+        }
+    },
+    {
+        "_id": "qjucpy",
+        "title": "hornet",
+        "severity": 8,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, earum quaerat? Autem ipsa maxime veniam temporibus dolorum? Quia porro dolores nobis numquam expedita sapiente molestias, molestiae pariatur accusamus hic quidem.",
+        "createdAt": 1763446717617,
+        "labels": [
+            "critical",
+            "need-CR"
+        ],
+        "creator": {
+            "_id": "9Z7gZz",
+            "fullname": "Mumi Za",
+            "score": 100,
+            "isAdmin": false
+        }
     }
 ]

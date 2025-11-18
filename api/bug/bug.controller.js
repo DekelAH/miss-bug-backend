@@ -10,15 +10,15 @@ export async function getBugs(req, res) {
         txt,
         severity: +severity || 0
     }
-    
+
     if (pageIdx !== undefined) filterBy.pageIdx = +pageIdx
     if (labels) {
         filterBy.labels = labels.split(',').map(label => label.trim())
-        console.log('Parsed labels:', filterBy.labels) 
+        console.log('Parsed labels:', filterBy.labels)
     }
     if (sortBy) filterBy.sortBy = sortBy
     if (sortDir) filterBy.sortDir = +sortDir
-    
+
     console.log('FilterBy being sent to service:', filterBy)
 
     try {
@@ -81,9 +81,10 @@ export async function getBug(req, res) {
 export async function updateBug(req, res) {
     const { _id, title, severity, description, createdAt, labels } = req.body
     const bugToSave = { _id, title, severity, description, createdAt, labels }
+    const loggedinUser = req.loggedinUser
 
     try {
-        const savedBug = await bugService.save(bugToSave)
+        const savedBug = await bugService.save(bugToSave, loggedinUser)
         loggerService.info(`Bug with id: ${bugToSave._id} added successfuly`)
         res.send(savedBug)
     } catch (err) {
@@ -96,9 +97,10 @@ export async function updateBug(req, res) {
 export async function addBug(req, res) {
     const { _id, title, severity, description, createdAt, labels } = req.body
     const bugToSave = { _id, title, severity, description, createdAt, labels }
+    const loggedinUser = req.loggedinUser
 
     try {
-        const savedBug = await bugService.save(bugToSave)
+        const savedBug = await bugService.save(bugToSave, loggedinUser)
         loggerService.info(`Bug with id: ${bugToSave._id} added successfuly`)
         res.send(savedBug)
     } catch (err) {
@@ -109,8 +111,10 @@ export async function addBug(req, res) {
 
 export async function removeBug(req, res) {
     const { bugId } = req.params
+    const loggedinUser = req.loggedinUser
+
     try {
-        await bugService.remove(bugId)
+        await bugService.remove(bugId, loggedinUser)
         loggerService.info(`Bug with id: ${bugId} removed successfuly`)
         res.send(`Bug with Id: ${bugId} removed successfuly`)
     } catch (err) {

@@ -6,6 +6,7 @@ export const userService = {
 
     query,
     getById,
+    getByUsername,
     save,
     remove
 }
@@ -38,6 +39,16 @@ async function getById(userId) {
     }
 }
 
+async function getByUsername(username) {
+    try {
+        const user = gUsers.find(user => user.username === username)
+        return user
+    } catch (err) {
+        loggerService.error('userService[getByUsername] : ', err)
+        throw err
+    }
+}
+
 async function save(userToSave) {
 
     console.log(userToSave)
@@ -51,6 +62,7 @@ async function save(userToSave) {
         } else {
 
             userToSave._id = makeId()
+            userToSave.score = 100
             gUsers.push(userToSave)
         }
 
@@ -79,3 +91,4 @@ async function remove(userId) {
 function _saveUsersToFile() {
     return writeJsonFile('./data/users.json', gUsers)
 }
+

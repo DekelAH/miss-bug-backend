@@ -9,28 +9,28 @@ export const bugService = {
     remove
 }
 
-const PAGE_SIZE = 6;
+const PAGE_SIZE = 15;
 const gBugs = readJsonFile('./data/bugs.json')
 
 async function query(filterBy = {}) {
     try {
         let bugsToDisplay = [...gBugs]
-        
+
         if (filterBy.txt) {
             const regExp = new RegExp(filterBy.txt, 'i')
             bugsToDisplay = bugsToDisplay.filter(bug => regExp.test(bug.title))
         }
-        
+
         if (filterBy.severity > 0) {
             bugsToDisplay = bugsToDisplay.filter(bug => bug.severity >= filterBy.severity)
         }
-        
+
         if (filterBy.labels && filterBy.labels.length > 0) {
             bugsToDisplay = bugsToDisplay.filter(bug => {
                 if (!bug.labels || !Array.isArray(bug.labels)) return false
-                
-                return filterBy.labels.some(filterLabel => 
-                    bug.labels.some(bugLabel => 
+
+                return filterBy.labels.some(filterLabel =>
+                    bug.labels.some(bugLabel =>
                         bugLabel.toLowerCase() === filterLabel.toLowerCase()
                     )
                 )
@@ -40,28 +40,28 @@ async function query(filterBy = {}) {
             bugsToDisplay.sort((a, b) => {
                 let aVal = a[filterBy.sortBy]
                 let bVal = b[filterBy.sortBy]
-                
+
                 if (typeof aVal === 'string') {
                     aVal = aVal.toLowerCase()
                     bVal = bVal && bVal.toLowerCase()
                 }
-                
+
                 if (aVal === undefined || aVal === null) return 1
                 if (bVal === undefined || bVal === null) return -1
-                
+
                 if (aVal < bVal) return -1 * filterBy.sortDir
                 if (aVal > bVal) return 1 * filterBy.sortDir
                 return 0
             })
         }
-        
+
         if (typeof filterBy.pageIdx === 'number' && filterBy.pageIdx >= 0) {
             const startIdx = filterBy.pageIdx * PAGE_SIZE
             bugsToDisplay = bugsToDisplay.slice(startIdx, startIdx + PAGE_SIZE)
         }
-        
+
         return bugsToDisplay
-        
+
     } catch (err) {
         loggerService.error('Couldnt get bugs', err)
         throw err
@@ -81,21 +81,28 @@ async function getById(bugId) {
     }
 }
 
-async function save(bugToSave) {
+async function save(bugToSave, loggedinUser) {
 
     console.log(bugToSave)
     try {
         if (bugToSave._id) {
-
             const bugIdx = gBugs.findIndex(bug => bug._id === bugToSave._id)
             if (bugIdx < 0) throw new Error('Cannot find bug')
-            bugToSave.createdAt = Date.now()
-            gBugs[bugIdx] = bugToSave
 
+            bugToSave.updatedAt = Date.now()
+            bugToSave.labels = _setLabels(bugToSave.severity)
+            bugToSave.creator = loggedinUser
+
+            if (!loggedinUser.isAdmin && gBugs[bugIdx].creator._id !== loggedinUser._id) {
+                throw new Error('Not your bug')
+            }
+            gBugs[bugIdx] = bugToSave
         } else {
 
             bugToSave._id = makeId()
             bugToSave.createdAt = Date.now()
+            bugToSave.creator = loggedinUser
+            bugToSave.labels = _setLabels(bugToSave.severity)
             gBugs.push(bugToSave)
         }
 
@@ -107,12 +114,13 @@ async function save(bugToSave) {
     }
 }
 
-async function remove(bugId) {
+async function remove(bugId, loggedinUser) {
     try {
+        console.log(bugId)
         const bugIdx = gBugs.findIndex(bug => bug._id === bugId)
-        if (bugIdx < 0) {
-            throw new Error(`Cannot find bug with id: ${bugId}`)
-        }
+        if (bugIdx < 0) throw new Error(`Cannot find bug with id: ${bugId}`)
+        if (!loggedinUser.isAdmin && gBugs[bugIdx].creator._id !== loggedinUser._id) throw new Error('Not your bug')
+
         gBugs.splice(bugIdx, 1)
         await _saveBugsToFile()
     } catch (err) {
@@ -122,6 +130,21 @@ async function remove(bugId) {
 
 function _saveBugsToFile() {
     return writeJsonFile('./data/bugs.json', gBugs)
+}
+
+function _setLabels(severity) {
+    const allLabels = ["critical", "need-CR", "harmless", "basic-injury"]
+    let bugLabels = []
+
+    if (severity <= 3) {
+        bugLabels = [...allLabels.filter(label => label === "harmless")]
+    } else if (severity > 3 && severity <= 6) {
+        bugLabels = [...allLabels.filter(label => ["harmless", "basic-injury"].includes(label))]
+    } else if (severity > 6) {
+        bugLabels = [...allLabels.filter(label => ["need-CR", "critical"].includes(label))]
+    }
+
+    return bugLabels
 }
 
 

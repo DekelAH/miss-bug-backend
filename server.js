@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser'
 import { loggerService } from './services/logger.service.js'
 import { bugRoutes } from './api/bug/bug.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
+import { authRoutes } from './api/auth/auth.routes.js'
 
 
 const app = express()
@@ -24,10 +25,13 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions))
-app.use(cookieParser())
+app.use(express.static('public'))
 app.use(express.json())
+app.use(cookieParser())
 app.use('/api/bug', bugRoutes)
 app.use('/api/user', userRoutes)
+app.use('/api/auth', authRoutes)
+
 
 
 
