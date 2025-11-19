@@ -1,24 +1,11 @@
 [
     {
-        "_id": "u103",
-        "fullname": "Shuki Sa",
-        "username": "shuki2",
-        "password": "shuki1234",
-        "score": 100
-    },
-    {
-        "_id": "9Z7gZz",
-        "fullname": "mumi zi",
-        "username": "mumi",
-        "password": "mumi123",
-        "score": 100
-    },
-    {
         "_id": "n2ln1D",
         "fullname": "kuki qa",
         "username": "Kuki",
         "password": "$2b$10$pWoj8ORqPKaKrK1oc6TkMOjiuhMF.BSv4QDPM.BjSXCZBcnZFRk0e",
-        "score": 100
+        "score": 100,
+        "isAdmin": false
     },
     {
         "username": "Chuki",
