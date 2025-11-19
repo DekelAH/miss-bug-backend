@@ -2396,3 +2396,14 @@
 18.11.2025, 11:04:48 - INFO - hitting /api/bug/?txt=&severity=0&sortBy=&sortDir=1&pageIdx=0
 18.11.2025, 11:04:48 - INFO - Bugs read successfuly
 18.11.2025, 11:20:12 - INFO - Server listening on port http://127.0.0.1:3030/
+19.11.2025, 16:16:33 - INFO - Server listening on port http://127.0.0.1:3030/
+19.11.2025, 16:16:47 - INFO - hitting /api/bug/?txt=&severity=0&sortBy=&sortDir=1&pageIdx=0
+19.11.2025, 16:16:47 - INFO - Bugs read successfuly
+19.11.2025, 16:16:47 - INFO - hitting /api/bug/?txt=&severity=0&sortBy=&sortDir=1&pageIdx=0
+19.11.2025, 16:16:47 - INFO - Bugs read successfuly
+19.11.2025, 16:16:52 - INFO - User login:  | {"_id":"n744Kz","fullname":"admini mi","score":100,"isAdmin":true}
+19.11.2025, 16:16:57 - INFO - hitting /api/bug/?txt=&severity=0&sortBy=&sortDir=1&pageIdx=0
+19.11.2025, 16:16:57 - INFO - Bugs read successfuly
+19.11.2025, 16:16:57 - INFO - hitting /api/bug/?txt=&severity=0&sortBy=&sortDir=1&pageIdx=0
+19.11.2025, 16:16:57 - INFO - Bugs read successfuly
+19.11.2025, 16:16:58 - INFO - Users read successfuly
