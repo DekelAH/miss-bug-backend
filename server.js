@@ -9,6 +9,7 @@ import { authRoutes } from './api/auth/auth.routes.js'
 
 const app = express()
 
+
 const port = process.env.PORT || 3030
 app.listen(port, () => {
 
