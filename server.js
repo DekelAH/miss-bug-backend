@@ -1,5 +1,6 @@
 import express from 'express'
 import cors from 'cors'
+import path from 'path'
 import cookieParser from 'cookie-parser'
 import { loggerService } from './services/logger.service.js'
 import { bugRoutes } from './api/bug/bug.routes.js'
