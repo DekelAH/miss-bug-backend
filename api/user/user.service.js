@@ -1,23 +1,30 @@
+import { dbService } from "../../services/db.service.js"
 import { loggerService } from "../../services/logger.service.js"
-import { makeId, readJsonFile, writeJsonFile } from "../../services/util.service.js"
-
 
 export const userService = {
 
     query,
     getById,
     getByUsername,
-    save,
+    add,
+    update,
     remove
 }
 
-const gUsers = readJsonFile('./data/users.json')
 
-async function query() {
+async function query(filterBy = {}) {
+
+    const criteria = _buildCriteria(filterBy)
 
     try {
 
-        const users = [...gUsers]
+        const collection = await dbService.getCollection('user')
+        var users = await collection.find(criteria).toArray()
+        users = users.map(user => {
+            delete user.password
+            user.createdAt = user._id.getTimestamp()
+            return user
+        })
         return users
     } catch (err) {
         loggerService.error('Couldnt get users', err)
@@ -28,7 +35,9 @@ async function query() {
 async function getById(userId) {
 
     try {
-        const user = gUsers.find(user => user._id === userId)
+        var criteria = { _id: ObjectId.createFromHexString(userId) }
+        const collection = await dbService.getCollection('user')
+        const user = await collection.findOne(criteria)
         if (!user) {
             throw new Error(`Cannot find bug with id: ${userId}`)
         }
@@ -41,35 +50,48 @@ async function getById(userId) {
 
 async function getByUsername(username) {
     try {
-        const user = gUsers.find(user => user.username === username)
+        const collection = await dbService.getCollection('user')
+        const user = await collection.findOne({ username })
         return user
     } catch (err) {
-        loggerService.error('userService[getByUsername] : ', err)
+        loggerService.error('Problem finding user by given username', err)
         throw err
     }
 }
 
-async function save(userToSave) {
+async function update(user) {
 
-    console.log(userToSave)
     try {
-        if (userToSave._id) {
-
-            const userIdx = gUsers.findIndex(user => user._id === userToSave._id)
-            if (userIdx < 0) throw new Error('Cannot find user')
-            gUsers[userIdx] = userToSave
-
-        } else {
-
-            userToSave._id = makeId()
-            userToSave.score = 100
-            gUsers.push(userToSave)
+        
+        const userToSave = {
+            _id: ObjectId.createFromHexString(user._id),
+            fullname: user.fullname,
+            score: user.score,
         }
-
-        await _saveUsersToFile()
+        const collection = await dbService.getCollection('user')
+        await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
         return userToSave
     } catch (err) {
+        loggerService.error('Problem updating user', err)  
+        throw err
+    }
+}
 
+async function add(user) {
+
+    try {
+        const userToAdd = {
+            username: user.username,
+            password: user.password,
+            fullname: user.fullname,
+            isAdmin: user.isAdmin,
+            score: 100
+        }
+        const collection = await dbService.getCollection('user')
+        await collection.insertOne(userToAdd)
+        return userToAdd
+    } catch (err) {
+        loggerService.error('Problem adding user', err)  
         throw err
     }
 }
@@ -77,18 +99,35 @@ async function save(userToSave) {
 async function remove(userId) {
 
     try {
-        const userIdx = gUsers.findIndex(bug => bug._id === userId)
-        if (userIdx < 0) {
-            throw new Error(`Cannot find bug with id: ${userId}`)
-        }
-        gUsers.splice(userIdx, 1)
-        await _saveUsersToFile()
+        const criteria = { _id: ObjectId.createFromHexString(userId) }
+        const collection = await dbService.getCollection('user')
+        await collection.deleteOne(criteria)
     } catch (err) {
+        loggerService.error('Problem removing user by given id : ', err)  
         throw err
     }
 }
 
-function _saveUsersToFile() {
-    return writeJsonFile('./data/users.json', gUsers)
+function _buildCriteria(filterBy) {
+    const criteria = {}
+    if (filterBy.txt) {
+        const txtCriteria = { $regex: filterBy.txt, $options: 'i' }
+        criteria.$or = [
+            {
+                username: txtCriteria,
+            },
+            {
+                fullname: txtCriteria,
+            },
+        ]
+    }
+    if (filterBy.minBalance) {
+        criteria.score = { $gte: filterBy.minBalance }
+    }
+    return criteria
 }
+
+// function _saveUsersToFile() {
+//     return writeJsonFile('./data/users.json', gUsers)
+// }
 

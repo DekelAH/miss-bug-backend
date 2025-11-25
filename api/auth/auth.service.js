@@ -31,6 +31,7 @@ function validateToken(token) {
 }
 
 async function login(username, password) {
+    console.log('auth.service - login with username:', username)
     var user = await userService.getByUsername(username)
     if (!user) throw 'Unkown username'
 
@@ -59,5 +60,5 @@ async function signup({ username, password, fullname }) {
     if (userExist) throw 'Username already taken'
 
     const hash = await bcrypt.hash(password, saltRounds)
-    return userService.save({ username, password: hash, fullname, isAdmin: false })
+    return userService.add({ username, password: hash, fullname, isAdmin: false })
 }

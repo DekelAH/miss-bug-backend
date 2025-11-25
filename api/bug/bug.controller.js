@@ -66,7 +66,6 @@ export async function getBug(req, res) {
         else return res.status(401).send('wait for a while...')
     }
     res.cookie('visitedBugs', JSON.stringify(visitedBugs), { maxAge: 7000 })
-    console.log('visitedBugs: ', visitedBugs)
 
     try {
         const bug = await bugService.getById(bugId)
@@ -84,7 +83,7 @@ export async function updateBug(req, res) {
     const loggedinUser = req.loggedinUser
 
     try {
-        const savedBug = await bugService.save(bugToSave, loggedinUser)
+        const savedBug = await bugService.update(bugToSave, loggedinUser)
         loggerService.info(`Bug with id: ${bugToSave._id} added successfuly`)
         res.send(savedBug)
     } catch (err) {
@@ -100,7 +99,7 @@ export async function addBug(req, res) {
     const loggedinUser = req.loggedinUser
 
     try {
-        const savedBug = await bugService.save(bugToSave, loggedinUser)
+        const savedBug = await bugService.add(bugToSave, loggedinUser)
         loggerService.info(`Bug with id: ${bugToSave._id} added successfuly`)
         res.send(savedBug)
     } catch (err) {

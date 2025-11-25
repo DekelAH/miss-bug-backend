@@ -2407,3 +2407,188 @@
 19.11.2025, 16:16:57 - INFO - hitting /api/bug/?txt=&severity=0&sortBy=&sortDir=1&pageIdx=0
 19.11.2025, 16:16:57 - INFO - Bugs read successfuly
 19.11.2025, 16:16:58 - INFO - Users read successfuly
+25.11.2025, 15:59:13 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 15:59:22 - INFO - hitting /api/bug/?txt=&severity=0&sortBy=&sortDir=1&pageIdx=0
+25.11.2025, 15:59:22 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:22 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:22 - ERROR - Couldnt get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:22 - ERROR - Couldn't get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:23 - INFO - hitting /api/bug/?txt=&severity=0&sortBy=&sortDir=1&pageIdx=0
+25.11.2025, 15:59:23 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:23 - ERROR - Couldnt get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:23 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:23 - ERROR - Couldn't get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:27 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:27 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:27 - ERROR - Problem finding user by given username | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:27 - ERROR - Failed to Login NaN
+25.11.2025, 15:59:55 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:55 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:55 - ERROR - Problem finding user by given username | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 15:59:55 - ERROR - Failed to Login NaN
+25.11.2025, 16:01:21 - INFO - hitting /api/bug
+25.11.2025, 16:01:21 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:01:21 - ERROR - Couldnt get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:01:21 - ERROR - Couldn't get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:01:21 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:01:58 - INFO - hitting /api/bug
+25.11.2025, 16:01:58 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:01:58 - ERROR - Couldnt get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:01:58 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:01:58 - ERROR - Couldn't get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:04:15 - INFO - hitting /api/bug
+25.11.2025, 16:04:15 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:04:15 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:04:15 - ERROR - Couldn't get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:04:15 - ERROR - Couldnt get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:05:44 - INFO - hitting /api/bug
+25.11.2025, 16:05:44 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:05:44 - ERROR - Couldn't get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:05:44 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:05:44 - ERROR - Couldnt get bugs | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:05:55 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:05:55 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:05:55 - ERROR - Problem finding user by given username | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:05:55 - ERROR - Failed to Login NaN
+25.11.2025, 16:09:07 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:09:07 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:09:07 - ERROR - Failed to Login NaN
+25.11.2025, 16:09:07 - ERROR - Problem finding user by given username | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:09:30 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:09:30 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:09:30 - ERROR - Problem finding user by given username | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:09:30 - ERROR - Failed to Login NaN
+25.11.2025, 16:16:09 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:16:09 - ERROR - Failed to Login NaN
+25.11.2025, 16:16:09 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:16:09 - ERROR - Problem finding user by given username | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:20:16 - ERROR - Cannot connect to DB | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:20:16 - ERROR - Cannot get collection | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:20:16 - ERROR - Problem finding user by given username | MongoParseError: Protocol and host list are required in "mongodb://"
+25.11.2025, 16:20:16 - ERROR - Failed to Login NaN
+25.11.2025, 16:20:23 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:20:28 - INFO - User login:  | {"_id":"n2ln1D","fullname":"kuki qa","score":100,"isAdmin":false}
+25.11.2025, 16:21:00 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:21:09 - INFO - User login:  | {"_id":"n2ln1D","fullname":"kuki qa","score":100,"isAdmin":false}
+25.11.2025, 16:21:36 - INFO - hitting /api/bug
+25.11.2025, 16:21:36 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:21:36 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:22:43 - INFO - hitting /api/bug
+25.11.2025, 16:22:43 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:22:43 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:25:39 - INFO - hitting /api/bug
+25.11.2025, 16:25:39 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:25:39 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:27:49 - INFO - hitting /api/bug
+25.11.2025, 16:27:49 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:27:49 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:28:10 - INFO - hitting /api/bug
+25.11.2025, 16:28:11 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:28:11 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:28:32 - INFO - hitting /api/bug
+25.11.2025, 16:28:33 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:28:33 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:29:07 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:29:09 - INFO - hitting /api/bug
+25.11.2025, 16:29:10 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:29:10 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:29:29 - INFO - hitting /api/bug
+25.11.2025, 16:29:29 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:29:29 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:29:53 - INFO - hitting /api/bug
+25.11.2025, 16:29:53 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:29:53 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:30:43 - INFO - hitting /api/bug
+25.11.2025, 16:30:43 - ERROR - Couldnt get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:30:43 - ERROR - Couldn't get bugs | MongoServerError: $regex has to be a string
+25.11.2025, 16:33:11 - INFO - hitting /api/bug/UH1B96
+25.11.2025, 16:33:11 - ERROR - Couldn't get bug | ReferenceError: logger is not defined
+25.11.2025, 16:34:17 - ERROR - Couldn't get bug | ReferenceError: logger is not defined
+25.11.2025, 16:34:17 - INFO - hitting /api/bug/UH1B96
+25.11.2025, 16:34:25 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:34:35 - INFO - hitting /api/bug/UH1B96
+25.11.2025, 16:34:35 - ERROR - while finding bug UH1B96 | BSONError: hex string must be 24 characters
+25.11.2025, 16:34:35 - ERROR - Couldn't get bug | BSONError: hex string must be 24 characters
+25.11.2025, 16:36:01 - INFO - hitting /api/bug
+25.11.2025, 16:36:02 - INFO - Bugs read successfuly
+25.11.2025, 16:37:00 - INFO - hitting /api/bug/HUxFDH
+25.11.2025, 16:37:00 - ERROR - cannot remove bug HUxFDH | BSONError: hex string must be 24 characters
+25.11.2025, 16:37:00 - ERROR - Couldn't remove bug | BSONError: hex string must be 24 characters
+25.11.2025, 16:39:37 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:39:42 - INFO - hitting /api/bug/HUxFDH
+25.11.2025, 16:39:42 - ERROR - cannot remove bug HUxFDH | BSONError: hex string must be 24 characters
+25.11.2025, 16:39:42 - ERROR - Couldn't remove bug | BSONError: hex string must be 24 characters
+25.11.2025, 16:40:13 - INFO - hitting /api/bug
+25.11.2025, 16:40:14 - INFO - Bugs read successfuly
+25.11.2025, 16:40:25 - ERROR - while finding bug 06VzjQ06VzjQ06VzjQ06VzjQ | BSONError: Argument passed in does not match the accepted types
+25.11.2025, 16:40:25 - INFO - hitting /api/bug/06VzjQ06VzjQ06VzjQ06VzjQ
+25.11.2025, 16:40:25 - ERROR - Couldn't get bug | BSONError: Argument passed in does not match the accepted types
+25.11.2025, 16:40:48 - INFO - hitting /api/bug/06VzjQ06VzjQ06VzjQ06VzjQ
+25.11.2025, 16:40:48 - ERROR - while finding bug 06VzjQ06VzjQ06VzjQ06VzjQ | BSONError: Argument passed in does not match the accepted types
+25.11.2025, 16:40:48 - ERROR - Couldn't get bug | BSONError: Argument passed in does not match the accepted types
+25.11.2025, 16:41:06 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:41:10 - INFO - hitting /api/bug/06VzjQ06VzjQ06VzjQ06VzjQ
+25.11.2025, 16:41:10 - ERROR - while finding bug 06VzjQ06VzjQ06VzjQ06VzjQ | BSONError: Argument passed in does not match the accepted types
+25.11.2025, 16:41:10 - ERROR - Couldn't get bug | BSONError: Argument passed in does not match the accepted types
+25.11.2025, 16:44:12 - INFO - hitting /api/bug/06VzjQ06VzjQ06VzjQ06VzjQ
+25.11.2025, 16:44:12 - ERROR - while finding bug 06VzjQ06VzjQ06VzjQ06VzjQ | BSONError: Argument passed in does not match the accepted types
+25.11.2025, 16:44:12 - ERROR - Couldn't get bug | BSONError: Argument passed in does not match the accepted types
+25.11.2025, 16:44:26 - INFO - hitting /api/bug/0f1e2d3c4b5a69788796a5b2
+25.11.2025, 16:44:27 - ERROR - while finding bug 0f1e2d3c4b5a69788796a5b2 | Error: Cannot find bug with id: 0f1e2d3c4b5a69788796a5b2
+25.11.2025, 16:44:27 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 0f1e2d3c4b5a69788796a5b2
+25.11.2025, 16:44:49 - INFO - hitting /api/bug/0f1e2d3c4b5a69788796a5b2
+25.11.2025, 16:44:49 - ERROR - while finding bug 0f1e2d3c4b5a69788796a5b2 | Error: Cannot find bug with id: 0f1e2d3c4b5a69788796a5b2
+25.11.2025, 16:44:49 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 0f1e2d3c4b5a69788796a5b2
+25.11.2025, 16:45:17 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:17 - ERROR - while finding bug 7a1f3c9b2d4e6f0a8b9c1d2e | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:17 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:19 - INFO - hitting /api/bug
+25.11.2025, 16:45:19 - INFO - Bugs read successfuly
+25.11.2025, 16:45:24 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:24 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:24 - ERROR - while finding bug 7a1f3c9b2d4e6f0a8b9c1d2e | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:25 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:25 - ERROR - while finding bug 7a1f3c9b2d4e6f0a8b9c1d2e | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:25 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:50 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:50 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:45:50 - ERROR - while finding bug 7a1f3c9b2d4e6f0a8b9c1d2e | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:46:20 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:46:20 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:46:20 - ERROR - while finding bug 7a1f3c9b2d4e6f0a8b9c1d2e | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:46:37 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:46:37 - ERROR - while finding bug 7a1f3c9b2d4e6f0a8b9c1d2e | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:46:37 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:47:14 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:47:14 - ERROR - while finding bug 7a1f3c9b2d4e6f0a8b9c1d2e | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:47:14 - ERROR - Couldn't get bug | Error: Cannot find bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:47:20 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:47:25 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:47:26 - INFO - Bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e read successfuly
+25.11.2025, 16:47:32 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:47:32 - INFO - Bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e read successfuly
+25.11.2025, 16:47:54 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:48:24 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:48:25 - INFO - Bug with id: 7a1f3c9b2d4e6f0a8b9c1d2e read successfuly
+25.11.2025, 16:48:30 - INFO - hitting /api/bug
+25.11.2025, 16:48:30 - INFO - Bugs read successfuly
+25.11.2025, 16:48:41 - INFO - hitting /api/bug/7a1f3c9b2d4e6f0a8b9c1d2e
+25.11.2025, 16:48:42 - ERROR - cannot remove bug 7a1f3c9b2d4e6f0a8b9c1d2e | Not your bug
+25.11.2025, 16:48:42 - ERROR - Couldn't remove bug | Not your bug
+25.11.2025, 16:49:41 - INFO - hitting /api/bug
+25.11.2025, 16:49:41 - ERROR - cannot insert bug | ReferenceError: loggedinUser is not defined
+25.11.2025, 16:49:41 - ERROR - Couldn't save bug | ReferenceError: loggedinUser is not defined
+25.11.2025, 16:50:07 - INFO - User login:  | {"_id":"a3f9c1d4e2b6f7c8d9a0b1c2","fullname":"kuki qa","score":100,"isAdmin":false}
+25.11.2025, 16:50:14 - INFO - hitting /api/bug
+25.11.2025, 16:50:14 - ERROR - cannot insert bug | ReferenceError: loggedinUser is not defined
+25.11.2025, 16:50:14 - ERROR - Couldn't save bug | ReferenceError: loggedinUser is not defined
+25.11.2025, 16:50:53 - INFO - hitting /api/bug
+25.11.2025, 16:50:53 - ERROR - cannot insert bug | ReferenceError: loggedinUser is not defined
+25.11.2025, 16:50:53 - ERROR - Couldn't save bug | ReferenceError: loggedinUser is not defined
+25.11.2025, 16:51:51 - INFO - Server listening on port http://127.0.0.1:3030/
+25.11.2025, 16:51:55 - INFO - hitting /api/bug
+25.11.2025, 16:51:56 - INFO - Bug with id: 6925c28c8f563932afa6776a added successfuly
+25.11.2025, 16:52:12 - INFO - hitting /api/bug/6925c28c8f563932afa6776a
+25.11.2025, 16:52:12 - INFO - Bug with id: 6925c28c8f563932afa6776a read successfuly
+25.11.2025, 16:52:18 - INFO - hitting /api/bug/6925c28c8f563932afa6776a
+25.11.2025, 16:52:18 - INFO - Bug with id: 6925c28c8f563932afa6776a removed successfuly

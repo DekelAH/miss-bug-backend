@@ -1,66 +1,36 @@
-import { makeId, readJsonFile, writeJsonFile } from '../../services/util.service.js'
 import { loggerService } from '../../services/logger.service.js'
+import { ObjectId } from 'mongodb';
+import { dbService } from '../../services/db.service.js';
 
 export const bugService = {
 
     query,
     getById,
-    save,
+    add,
+    update,
     remove
 }
 
 const PAGE_SIZE = 15;
-const gBugs = readJsonFile('./data/bugs.json')
 
-async function query(filterBy = {}) {
+async function query(filterBy) {
     try {
-        let bugsToDisplay = [...gBugs]
 
-        if (filterBy.txt) {
-            const regExp = new RegExp(filterBy.txt, 'i')
-            bugsToDisplay = bugsToDisplay.filter(bug => regExp.test(bug.title))
+        filterBy.severity = filterBy.severity || 0;
+        filterBy.txt = filterBy.txt || '';
+
+        const criteria = _buildCriteria(filterBy)
+        const sort = _buildSort(filterBy)
+
+        const collection = await dbService.getCollection('bug')
+        var bugCursor = await collection.find(criteria, { sort })
+
+        if (filterBy.pageIdx !== undefined) {
+            bugCursor.skip(filterBy.pageIdx * PAGE_SIZE).limit(PAGE_SIZE)
         }
+        const bugs = await bugCursor.toArray()
 
-        if (filterBy.severity > 0) {
-            bugsToDisplay = bugsToDisplay.filter(bug => bug.severity >= filterBy.severity)
-        }
-
-        if (filterBy.labels && filterBy.labels.length > 0) {
-            bugsToDisplay = bugsToDisplay.filter(bug => {
-                if (!bug.labels || !Array.isArray(bug.labels)) return false
-
-                return filterBy.labels.some(filterLabel =>
-                    bug.labels.some(bugLabel =>
-                        bugLabel.toLowerCase() === filterLabel.toLowerCase()
-                    )
-                )
-            })
-        }
-        if (filterBy.sortBy) {
-            bugsToDisplay.sort((a, b) => {
-                let aVal = a[filterBy.sortBy]
-                let bVal = b[filterBy.sortBy]
-
-                if (typeof aVal === 'string') {
-                    aVal = aVal.toLowerCase()
-                    bVal = bVal && bVal.toLowerCase()
-                }
-
-                if (aVal === undefined || aVal === null) return 1
-                if (bVal === undefined || bVal === null) return -1
-
-                if (aVal < bVal) return -1 * filterBy.sortDir
-                if (aVal > bVal) return 1 * filterBy.sortDir
-                return 0
-            })
-        }
-
-        if (typeof filterBy.pageIdx === 'number' && filterBy.pageIdx >= 0) {
-            const startIdx = filterBy.pageIdx * PAGE_SIZE
-            bugsToDisplay = bugsToDisplay.slice(startIdx, startIdx + PAGE_SIZE)
-        }
-
-        return bugsToDisplay
+        return bugs
 
     } catch (err) {
         loggerService.error('Couldnt get bugs', err)
@@ -69,68 +39,97 @@ async function query(filterBy = {}) {
 }
 
 async function getById(bugId) {
+
     try {
-        const bug = gBugs.find(bug => bug._id === bugId)
-        if (!bug) {
-            throw new Error(`Cannot find bug with id: ${bugId}`)
-        }
+        
+        const criteria = { _id: ObjectId.createFromHexString(bugId) }
+
+        const collection = await dbService.getCollection('bug')
+        const bug = await collection.findOne(criteria)
         return bug
     } catch (err) {
-
+        loggerService.error(`while finding bug ${bugId}`, err)
         throw err
     }
 }
 
-async function save(bugToSave, loggedinUser) {
+async function add(bug, loggedinUser) {
 
-    console.log(bugToSave)
     try {
-        if (bugToSave._id) {
-            const bugIdx = gBugs.findIndex(bug => bug._id === bugToSave._id)
-            if (bugIdx < 0) throw new Error('Cannot find bug')
-
-            bugToSave.updatedAt = Date.now()
-            bugToSave.labels = _setLabels(bugToSave.severity)
-            bugToSave.creator = loggedinUser
-
-            if (!loggedinUser.isAdmin && gBugs[bugIdx].creator._id !== loggedinUser._id) {
-                throw new Error('Not your bug')
-            }
-            gBugs[bugIdx] = bugToSave
-        } else {
-
-            bugToSave._id = makeId()
-            bugToSave.createdAt = Date.now()
-            bugToSave.creator = loggedinUser
-            bugToSave.labels = _setLabels(bugToSave.severity)
-            gBugs.push(bugToSave)
-        }
-
-        await _saveBugsToFile()
-        return bugToSave
+        const collection = await dbService.getCollection('bug')
+        bug.createdAt = Date.now()
+        bug.creator = loggedinUser
+        bug.labels = _setLabels(bug.severity)
+        await collection.insertOne(bug)
+        return bug
     } catch (err) {
+        loggerService.error('cannot insert bug', err)
+        throw err
+    }
+}
 
+async function update(bug, loggedinUser) {
+
+    const bugToSave = { severity: bug.severity, description: bug.description }
+
+    try {
+
+        const criteria = { _id: ObjectId.createFromHexString(bug._id) }
+        const collection = await dbService.getCollection('bug')
+        bugToSave.updatedAt = Date.now()
+        bugToSave.labels = _setLabels(bug.severity)
+        bugToSave.creator = loggedinUser
+        await collection.updateOne(criteria, { $set: bugToSave })
+
+        return bug
+    } catch (err) {
+        loggerService.error(`cannot update bug ${bug._id}`, err)
         throw err
     }
 }
 
 async function remove(bugId, loggedinUser) {
-    try {
-        console.log(bugId)
-        const bugIdx = gBugs.findIndex(bug => bug._id === bugId)
-        if (bugIdx < 0) throw new Error(`Cannot find bug with id: ${bugId}`)
-        if (!loggedinUser.isAdmin && gBugs[bugIdx].creator._id !== loggedinUser._id) throw new Error('Not your bug')
 
-        gBugs.splice(bugIdx, 1)
-        await _saveBugsToFile()
+    const { _id: creatorId, isAdmin } = loggedinUser
+
+    try {
+        const criteria = {
+            _id: ObjectId.createFromHexString(bugId),
+        }
+
+        if (!isAdmin) criteria['creator._id'] = creatorId
+
+        const collection = await dbService.getCollection('bug')
+        const res = await collection.deleteOne(criteria)
+
+        if (res.deletedCount === 0) throw ('Not your bug')
+
+        return bugId
+
     } catch (err) {
+        loggerService.error(`cannot remove bug ${bugId}`, err)
         throw err
     }
 }
 
-function _saveBugsToFile() {
-    return writeJsonFile('./data/bugs.json', gBugs)
+function _buildCriteria(filterBy) {
+    console.log('filterBy:', filterBy);
+    const criteria = {
+        title: { $regex: filterBy.txt, $options: 'i' },
+        severity: { $gte: filterBy.severity },
+    }
+
+    return criteria
 }
+
+function _buildSort(filterBy) {
+    if (!filterBy.sortField) return {}
+    return { [filterBy.sortField]: filterBy.sortDir }
+}
+
+// function _saveBugsToFile() {
+//     return writeJsonFile('./data/bugs.json', gBugs)
+// }
 
 function _setLabels(severity) {
     const allLabels = ["critical", "need-CR", "harmless", "basic-injury"]
